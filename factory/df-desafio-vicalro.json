@@ -1,0 +1,9 @@
+{
+	"name": "df-desafio-vicalro",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4c527e30-4b53-4454-849f-da17772865aa",
+		"tenantId": "a49e2ad8-3b8d-40e8-8c45-1505c9a243d3"
+	}
+}
