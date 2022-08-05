@@ -13,6 +13,9 @@
 		},
 		"ls_keyvault_properties_typeProperties_baseUrl": {
 			"value": "https://kv-desafio-vicalro.vault.azure.net/"
+		},
+		"ls_databricks_properties_typeProperties_existingClusterId": {
+			"value": "0804-140340-fikkby3c"
 		}
 	}
 }

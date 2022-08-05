@@ -19,6 +19,10 @@
 			"type": "string",
 			"defaultValue": "https://kv-desafio-vicalro.vault.azure.net/"
 		},
+		"ls_databricks_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0804-140340-fikkby3c"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -54,6 +58,9 @@
 					},
 					"ls_keyvault_properties_typeProperties_baseUrl": {
 						"value": "[parameters('ls_keyvault_properties_typeProperties_baseUrl')]"
+					},
+					"ls_databricks_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('ls_databricks_properties_typeProperties_existingClusterId')]"
 					}
 				}
 			},
