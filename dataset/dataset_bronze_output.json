@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "data",
-				"fileSystem": "raw"
+				"folderPath": "datasets",
+				"fileSystem": "bronze"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
