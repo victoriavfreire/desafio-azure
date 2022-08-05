@@ -3,8 +3,8 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data",
-				"type": "Copy",
+				"name": "Lookup-parameters",
+				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "7.00:00:00",
@@ -20,46 +20,19 @@
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
 							"recursive": true,
-							"wildcardFileName": "*",
+							"modifiedDatetimeStart": "2022-08-05T00:00:00.660Z",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
 							"type": "DelimitedTextReadSettings"
 						}
 					},
-					"sink": {
-						"type": "DelimitedTextSink",
-						"storeSettings": {
-							"type": "AzureBlobFSWriteSettings"
-						},
-						"formatSettings": {
-							"type": "DelimitedTextWriteSettings",
-							"quoteAllText": true,
-							"fileExtension": ".csv"
-						}
+					"dataset": {
+						"referenceName": "parametros",
+						"type": "DatasetReference"
 					},
-					"enableStaging": false,
-					"translator": {
-						"type": "TabularTranslator",
-						"typeConversion": true,
-						"typeConversionSettings": {
-							"allowDataTruncation": true,
-							"treatBooleanAsNumber": false
-						}
-					}
-				},
-				"inputs": [
-					{
-						"referenceName": "dataset_crime",
-						"type": "DatasetReference"
-					}
-				],
-				"outputs": [
-					{
-						"referenceName": "dataset_bronze_output",
-						"type": "DatasetReference"
-					}
-				]
+					"firstRowOnly": false
+				}
 			}
 		],
 		"folder": {
