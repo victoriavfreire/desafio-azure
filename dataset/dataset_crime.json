@@ -1,0 +1,92 @@
+{
+	"name": "dataset_crime",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_container",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "data",
+				"fileSystem": "raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "INCIDENT_NUMBER",
+				"type": "String"
+			},
+			{
+				"name": "OFFENSE_CODE",
+				"type": "String"
+			},
+			{
+				"name": "OFFENSE_CODE_GROUP",
+				"type": "String"
+			},
+			{
+				"name": "OFFENSE_DESCRIPTION",
+				"type": "String"
+			},
+			{
+				"name": "DISTRICT",
+				"type": "String"
+			},
+			{
+				"name": "REPORTING_AREA",
+				"type": "String"
+			},
+			{
+				"name": "SHOOTING",
+				"type": "String"
+			},
+			{
+				"name": "OCCURRED_ON_DATE",
+				"type": "String"
+			},
+			{
+				"name": "YEAR",
+				"type": "String"
+			},
+			{
+				"name": "MONTH",
+				"type": "String"
+			},
+			{
+				"name": "DAY_OF_WEEK",
+				"type": "String"
+			},
+			{
+				"name": "HOUR",
+				"type": "String"
+			},
+			{
+				"name": "UCR_PART",
+				"type": "String"
+			},
+			{
+				"name": "STREET",
+				"type": "String"
+			},
+			{
+				"name": "LATITUDE",
+				"type": "String"
+			},
+			{
+				"name": "LONGITUDE",
+				"type": "String"
+			},
+			{
+				"name": "LOCATION",
+				"type": "String"
+			}
+		]
+	}
+}
