@@ -1,0 +1,29 @@
+{
+	"name": "parametros",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_container",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "parameters.csv",
+				"folderPath": "parametro",
+				"fileSystem": "raw"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": ""
+		},
+		"schema": [
+			{
+				"name": "statusProcess|fileName|database|table|delimiter",
+				"type": "String"
+			}
+		]
+	}
+}
